@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+.hiker-cards,
+.bridge-cards,
+.bridge-info-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.bridge-info-cards {
+  justify-content: center;
+}
+
+.bridge-warning,
+.hiker-warning,
+.error {
+  color: red;
+}
+
+.bridge-container,
+.hiker-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0;
+}
+
+.bridge-info-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.bridge-info-container h3 {
+  margin-top: 5px;
+}
+
+.bridge-container {
+  margin-top: 30px;
+}
+
+.hiker-card,
+.bridge-card {
+  width: 10rem;
+}
+
+.bridge-info-card {
+  min-width: 15rem;
+  text-align: left;
+}
+
+.hiker-card button,
+.bridge-card button {
+  margin-top: 5px;
+}
+
+.hiker-card p,
+.bridge-card p {
+  margin-bottom: 0.25rem;
+}
+
+.hiker-form,
+.bridge-form {
+  width: 25%;
+}
+
+.bridge-info-cards .card {
+  border-width: 2px !important;
+}
+
+.spinner-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

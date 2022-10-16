@@ -1,0 +1,17 @@
+version: "3.9"
+networks:
+  scala:
+    driver: bridge
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - scala
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    networks:
+      - scala
