@@ -3,13 +3,25 @@ networks:
   scala:
     driver: bridge
 services:
-  frontend:
-    build: ./frontend
+  nginx:
+    build: ./deploy
+    networks:
+      - scala
     ports:
       - "3000:3000"
+    depends_on:
+      - frontend
+      - backend
+    links:
+      - frontend
+      - backend
+  frontend:
+    container_name: scala_frontend
+    build: ./frontend
     networks:
       - scala
   backend:
+    container_name: scala_backend
     build: ./backend
     ports:
       - "8000:8000"

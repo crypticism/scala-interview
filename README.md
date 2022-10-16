@@ -4,7 +4,7 @@ This project is a user interface and api designed to solve the hiking take home 
 
 ## Running the application
 
-Run `docker compose up` to build and run the backend and frontend docker containers
+Run `docker compose up` to build and run the nginx, backend and frontend docker containers
 
 Once the containers are running, visit `http://localhost:3000` to view the application
 
@@ -41,7 +41,3 @@ The App.tsx file contains all the code used to compose the frontend. It triggers
 ## Backend design
 
 The backend only contains two files. One file creates the FastAPI instance, defines default data and creates endpoints. The other file defines the types used by the API.
-
-## Issues
-
-I ran into CORS issues when deploying onto the server and ran out of time to attempt to resolve them

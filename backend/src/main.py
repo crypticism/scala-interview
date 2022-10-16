@@ -7,14 +7,6 @@ from .schema import Hiker, Bridge
 
 app = FastAPI()
 
-origins = [
-    "http://localhost",
-    "http://localhost:3000",
-    "http://localhost:3000/"
-]
-
-
-
 hikers = [
     Hiker(id="A", speed=100),
     Hiker(id="B", speed=50),
