@@ -4,7 +4,7 @@ import type { Hiker, Bridge } from "../app/types";
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost/api/", // Change localhost to server url here
+    baseUrl: "http://localhost:3000/api/", // Change localhost:3000 to server url (no port) here
     mode: "cors",
     credentials: "include",
     prepareHeaders(headers, api) {
